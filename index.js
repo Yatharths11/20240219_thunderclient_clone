@@ -36,3 +36,31 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+var status
+var status_text
+
+let result 
+var api_address = (document.getElementById('searchbar')).value
+console.log(api_address)
+// fetch(api_address)
+// .then((response)=>{
+//     status_text = response.statusText;
+//     // status = response.status;
+// })
+// console.log(status_text,status)
+
+
+function get_fetch(){
+    var api_address = document.getElementById('searchbar').value
+    fetch('https://dog-api.kinduff.com/api/facts')
+    .then((response)=>response.json())
+    .then((data)=>{
+        console.log(typeof data);
+        document.getElementById('print_response').innerText = JSON.stringify(data);
+    })
+
+
+
+
+}

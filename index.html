@@ -19,8 +19,8 @@
                     <option value="mercedes">DEL</option>
                     <option value="audi">PUT</option>
                     </select>
-                    <input type="text" id="searchbar" placeholder="Search..."/> 
-                    <button class="send-button">Send</button>
+                    <input  type="text" id="searchbar" placeholder="Search..."/> 
+                    <button class="send-button" onclick="get_fetch()">Send</button>
                 </div>
     
                 <div class="buttons">
@@ -35,6 +35,20 @@
             <hr>
             <div class="query_container">
                 <h2>Query Parameter</h2>
+                <div class="boc-parameter-value">
+                    <form action="">
+                        <input class="param-checkbox" type="checkbox">
+                        <input class="param-value" type="parameter">
+                        <input class="param-value" type="value">
+                    </form>
+                </div>
+                <div class="boc-parameter-value">
+                    <form action="">
+                        <input class="param-checkbox" type="checkbox">
+                        <input class="param-value" type="parameter">
+                        <input class="param-value" type="value">
+                    </form>
+                </div>
                 <div class="boc-parameter-value">
                     <form action="">
                         <input class="param-checkbox" type="checkbox">
@@ -62,6 +76,8 @@
                 </div>
             </div>
             <hr>
+
+            <div class="print_response" id="print_response"></div>
         </div>
     </div>
     <script src="index.js"></script>
